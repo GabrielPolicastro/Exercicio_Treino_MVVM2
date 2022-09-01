@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="correcao_mvvm30deMaio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CPF" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RN4-XE-YP2">
+                                <rect key="frame" x="20" y="54" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lil-A0-THZ">
+                                <rect key="frame" x="50" y="118" width="314" height="40.5"/>
+                                <color key="tintColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Pesquisar">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pesquisarButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u42-XE-Tt8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDz-pN-Ab5">
+                                <rect key="frame" x="20" y="208.5" width="53" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Endereco" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1r-AL-uxv">
+                                <rect key="frame" x="20" y="252.5" width="83.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Idade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYi-RF-rex">
+                                <rect key="frame" x="20" y="296.5" width="52" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Altura" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFR-sG-G4I">
+                                <rect key="frame" x="20" y="340.5" width="52" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RN4-XE-YP2" secondAttribute="trailing" constant="20" id="LNv-zS-2qt"/>
+                            <constraint firstItem="yYi-RF-rex" firstAttribute="leading" secondItem="W1r-AL-uxv" secondAttribute="leading" id="Nj6-6j-A8G"/>
+                            <constraint firstItem="Lil-A0-THZ" firstAttribute="top" secondItem="RN4-XE-YP2" secondAttribute="bottom" constant="30" id="T3O-sb-Qsq"/>
+                            <constraint firstItem="Lil-A0-THZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Xzu-Lq-ohW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yYi-RF-rex" secondAttribute="trailing" constant="342" id="Y7q-fv-6Hh"/>
+                            <constraint firstItem="W1r-AL-uxv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ak2-uL-od6"/>
+                            <constraint firstItem="yYi-RF-rex" firstAttribute="top" secondItem="W1r-AL-uxv" secondAttribute="bottom" constant="20" id="btw-JU-8g6"/>
+                            <constraint firstItem="W1r-AL-uxv" firstAttribute="top" secondItem="aDz-pN-Ab5" secondAttribute="bottom" constant="20" id="e6Q-g9-V7W"/>
+                            <constraint firstItem="RN4-XE-YP2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="fCD-W5-EQe"/>
+                            <constraint firstItem="fFR-sG-G4I" firstAttribute="top" secondItem="yYi-RF-rex" secondAttribute="bottom" constant="20" id="fuh-Ga-RB4"/>
+                            <constraint firstItem="aDz-pN-Ab5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="g47-2T-IuV"/>
+                            <constraint firstItem="fFR-sG-G4I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="naY-Dg-lSN"/>
+                            <constraint firstItem="RN4-XE-YP2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pQg-6i-sVf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lil-A0-THZ" secondAttribute="trailing" constant="50" id="q9V-KJ-eEB"/>
+                            <constraint firstItem="aDz-pN-Ab5" firstAttribute="top" secondItem="Lil-A0-THZ" secondAttribute="bottom" constant="50" id="vJr-qe-vmh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="alturaLabel" destination="fFR-sG-G4I" id="qXK-XR-4Uq"/>
+                        <outlet property="cpfTextField" destination="RN4-XE-YP2" id="UML-Qt-7iF"/>
+                        <outlet property="enderecoLabel" destination="W1r-AL-uxv" id="tnc-dr-QSm"/>
+                        <outlet property="idadeLabel" destination="yYi-RF-rex" id="dEH-b2-sTu"/>
+                        <outlet property="nomeLabel" destination="aDz-pN-Ab5" id="k7V-fz-B4w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="69.642857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
