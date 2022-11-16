@@ -1,2 +1,2 @@
-# Training exercise_MVVM
+# Training exercise_MVVM2
 
